@@ -14,9 +14,9 @@ while localbalance >= 0:
     localbalance = balance
     minimumPayment += 10
     localbalance = (localbalance*(1 + (annualInterestRate/12))**12) - (minimumPayment/(annualInterestRate/12))*(((1+(annualInterestRate/12))**12)-1)
-#    for month in range(12):
-#        localbalance = localbalance - minimumPayment
-#        interest = (annualInterestRate/12) * localbalance
-#        localbalance += interest   
+    # for month in range(12):
+    #     localbalance = localbalance - minimumPayment
+    #     interest = (annualInterestRate/12) * localbalance
+    #     localbalance += interest
     print(str(minimumPayment) + " " + str(localbalance))
 print("Lowest Payment : " + str(minimumPayment))
